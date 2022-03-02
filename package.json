@@ -1,0 +1,34 @@
+{
+  "name": "netlify-monitor",
+  "version": "0.0.1",
+  "description": "A Chrome Extension to keep an eye on your Netlify builds.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand --testTimeout=60000",
+    "dev": "browser-sync start --server --watch --startPath 'dev/index.html'",
+    "dev-no-open": "browser-sync start --server --watch --no-open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matteocargnelutti/netlify-monitor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matteocargnelutti/netlify-monitor/issues"
+  },
+  "homepage": "https://github.com/matteocargnelutti/netlify-monitor#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.0.178",
+    "browser-sync": "^2.27.7",
+    "dexie": "^3.2.0",
+    "jest": "^27.5.1",
+    "node-fetch": "^3.2.0",
+    "prompts": "^2.4.2",
+    "puppeteer": "^13.4.0",
+    "uuid": "^8.3.2",
+    "zip-dir": "^2.0.0"
+  }
+}

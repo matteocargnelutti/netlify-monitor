@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+test.sh
+.env
+extension/constants/netlifyClientId.js
+extension/lib/dexie.mjs
+netlify-monitor.zip

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Netlify Monitor: DEV Mode</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="index.css"/>
+
+    <script type="module" src="index.js"></script>
+  </head>
+
+  <body>
+
+    <h1>
+      <img src="icon.png" alt="Netlify Monitor's icon"/>
+      <span>Netlify Monitor: DEV Mode</span>
+    </h1>
+
+    <div id="extension">
+      <iframe src="../extension/popup/index.html"></iframe>
+    </div>
+    
+    <div id="controls">
+      <h2>What to mock?</h2>
+
+      <form action="#">
+        <fieldset>
+          <legend>General</legend>
+
+          <button data-to-mock="user-info-all">Mock Auth</button>
+          <button data-to-mock="user-info-refresh-request">Simulate Pending Refresh Request</button>
+          <button data-to-mock="user-info-toggle-notifications">Toggle notifications on / off</button>
+          <button data-to-mock="clear-database">Clear Database</button>
+          <button data-to-mock="clear-console">Clear Console</button>
+        </fieldset>
+
+        <fieldset>
+          <legend>Websites &amp; Builds</legend>
+
+          <div>
+            <label>Total websites</label>
+            <input name="input-websites" type="number" min="0" max="100" value="10" />
+          </div>
+
+          <div>
+            <label>Pending builds</label>
+            <input name="input-pending-builds" type="number" min="0" max="100" value="1" />
+          </div>
+
+          <div>
+            <label>Failed builds</label>
+            <input name="input-failed-builds" type="number" min="0" max="100" value="1" />
+          </div>
+
+          <button data-to-mock="websites-and-builds">Mock Websites &amp; Builds</button>
+        </fieldset>
+
+        <fieldset>
+          <legend>Mocks Console</legend>
+          <textarea disabled id="console"></textarea>
+        </fieldset>
+      </form>
+
+    </div>
+
+  </body>
+
+</html>

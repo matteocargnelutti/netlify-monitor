@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Netlify Monitor</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type="module" src="index.js"></script>
+    <script type="module" src="components/AuthorizationDialog.js"></script>
+    <script type="module" src="components/HeaderToolbar.js"></script>
+    <script type="module" src="components/FooterToolbar.js"></script>
+    <script type="module" src="components/SitesList.js"></script>
+
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="components/AuthorizationDialog.css"/>
+    <link rel="stylesheet" href="components/HeaderToolbar.css"/>
+    <link rel="stylesheet" href="components/FooterToolbar.css"/>
+    <link rel="stylesheet" href="components/SitesList.css"/>
+  </head>
+
+  <body>
+    <authorization-dialog class="hidden"></authorization-dialog>
+    
+    <header-toolbar></header-toolbar>
+    <sites-list></sites-list>
+    <footer-toolbar></footer-toolbar>
+  </body>
+
+</html>

@@ -1,0 +1,29 @@
+name: Run tests
+
+on: 
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+env:
+  TESTS_NETLIFY_ACCESS_TOKEN: ${{ secrets.TESTS_NETLIFY_ACCESS_TOKEN }}
+  PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
+  CI: 'true'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: "Install Node"
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - name: "Install dependencies"
+      run: npm install
+    - name: "Run tests"
+      uses: mujo-code/puppeteer-headful@v2
+      with:
+        # Mocks "./extension/constants/netlifyClientId.js" before running the tests
+        args: touch ./extension/constants/netlifyClientId.js && echo "export default '';" > ./extension/constants/netlifyClientId.js && npm test

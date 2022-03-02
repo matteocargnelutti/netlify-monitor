@@ -1,0 +1,33 @@
+{
+  "name": "Netlify Monitor",
+  "description": "__MSG_app_description__",
+  "default_locale": "en",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "icons": {
+    "16": "assets/icon-16.png",
+    "48": "assets/icon-48.png",
+    "64": "assets/icon-64.png",
+    "128": "assets/icon-128.png",
+    "256": "assets/icon-256.png"
+  },
+  "background": {
+    "service_worker": "background/index.js",
+    "type": "module"
+  },
+  "permissions": [
+    "alarms",
+    "notifications",
+    "identity"
+  ],
+  "host_permissions": [
+    "https://app.netlify.com/*",
+    "https://api.netlify.com/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; frame-ancestors 'none'; connect-src 'self' https://api.netlify.com;"
+  },
+  "action": {
+    "default_popup": "popup/index.html"
+  }
+}

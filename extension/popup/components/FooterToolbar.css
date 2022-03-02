@@ -1,0 +1,38 @@
+footer-toolbar {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  height: 11%;
+  padding: 0.55rem;
+  justify-content: space-between;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top: var(--body-border-width) solid var(--main-color-);
+}
+
+footer-toolbar button {
+  padding: 0.45rem;
+  padding-left: 0.35rem;
+  text-align: center;
+}
+
+footer-toolbar button img {
+  width: 1.15rem;
+  transition: all 0.35s ease-in-out;
+  vertical-align: middle;
+}
+
+footer-toolbar button span {
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+footer-toolbar button:hover {
+  text-decoration: none;
+}
+
+footer-toolbar button[name="notifications"] {
+  width: 17.5ch;
+  text-align: left;
+}

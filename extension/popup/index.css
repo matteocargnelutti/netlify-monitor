@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --main-color: white; 
+  --main-color-: rgb(230, 230, 230);
+  --main-color--: rgb(215, 215, 215);
+
+  --opposite-color: black;
+  --opposite-color-: rgb(24, 24, 24);
+  --opposite-color--: rgb(42, 42, 42);
+
+  --action-color: #1f7477;
+  --action-color-: rgb(22, 67, 68);
+  --action-color--: rgb(7, 30, 32);
+
+  --extension-width: 25rem;
+  --extension-height: 35rem;
+  --body-border-width: 0.25rem;
+
+  --background-pattern-color1: #f7f7f7;
+  --background-pattern-color2: #f7f7f777;
+
+  --failed-build-background-color: rgba(253, 203, 198, 0.5);
+  --pending-build-background-color: rgba(255, 241, 190, 0.5);
+}
+
+html, body {
+
+}
+
+html {
+  font-size: 14px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+body {
+  width: var(--extension-width);
+  height: var(--extension-height);
+  border: var(--body-border-width) solid var(--main-color--);
+  background-color: var(--main-color);
+  color: var(--opposite-color);
+  overflow: hidden;
+
+  /* Thanks to: https://www.magicpattern.design/tools/css-backgroundshttps://www.magicpattern.design/tools/css-backgrounds */
+  background-image:  linear-gradient(30deg, var(--background-pattern-color1) 12%, transparent 12.5%, transparent 87%, var(--background-pattern-color1) 87.5%, #f7f7f7), linear-gradient(150deg, var(--background-pattern-color1) 12%, transparent 12.5%, transparent 87%, var(--background-pattern-color1) 87.5%, #f7f7f7), linear-gradient(30deg, var(--background-pattern-color1) 12%, transparent 12.5%, transparent 87%, var(--background-pattern-color1) 87.5%, #f7f7f7), linear-gradient(150deg, var(--background-pattern-color1) 12%, transparent 12.5%, transparent 87%, var(--background-pattern-color1) 87.5%, #f7f7f7), linear-gradient(60deg, var(--background-pattern-color2) 25%, transparent 25.5%, transparent 75%, var(--background-pattern-color2) 75%, #f7f7f777), linear-gradient(60deg, var(--background-pattern-color2) 25%, transparent 25.5%, transparent 75%, var(--background-pattern-color2) 75%, #f7f7f777);
+  background-size: 46px 81px;
+  background-position: 0 0, 0 0, 23px 40px, 23px 40px, 0 0, 23px 40px;
+}
+
+button {
+  border: 0px;
+  color: var(--main-color);
+  font-size: 1rem;
+  letter-spacing: -.05rem;
+  font-weight: bold;
+  padding: 0.85rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  background-color: var(--action-color);
+  border-left: 0.25rem solid var(--action-color-);
+  border-bottom: 0.25rem solid var(--action-color-);
+  transition: all 0.15s ease-in-out;
+}
+
+button:hover, button:active {
+  background-color: var(--action-color-);
+  border-left-color: var(--action-color--);
+  border-bottom-color: var(--action-color--);
+  text-decoration: underline;
+}
+
+button:active {
+  outline: 0.15rem dashed var(--action-color);
+}
+
+button[disabled] {
+  cursor: not-allowed;
+  background-color: var(--action-color--);
+  border-color: var(--opposite-color);
+}
+
+a {
+  color: var(--action-color--);
+}
+
+a:hover,
+a:visited {
+  color: var(--action-color-);
+}

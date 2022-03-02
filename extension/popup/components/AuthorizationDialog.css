@@ -1,0 +1,47 @@
+authorization-dialog {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+authorization-dialog.hidden {
+  display: none;
+}
+
+authorization-dialog > div {
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.25rem;
+}
+
+authorization-dialog > div img {
+  width: 6rem;
+  display: block;
+  margin: auto;
+}
+
+authorization-dialog > div h1 {
+  font-size: 2rem;
+  letter-spacing: -.1rem;
+}
+
+authorization-dialog > div p {
+  font-size: 1.25rem;
+  color: var(--opposite-color--);
+  letter-spacing: -.05rem;
+}
+
+authorization-dialog > div button {
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+
+authorization-dialog > div a {
+  font-size: 0.85rem;
+}

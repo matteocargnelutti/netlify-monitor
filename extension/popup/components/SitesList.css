@@ -1,0 +1,97 @@
+sites-list {
+  display: flex;
+  width: 100%;
+  height: 77%;
+  overflow-x: scroll
+}
+
+/* Placeholder that shows when there are no websites to display */
+sites-list .empty {
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+sites-list .empty img {
+  width: 25%;
+  margin-bottom: 1rem;
+}
+
+sites-list .empty p {
+  font-size: 1.25rem;
+  color: var(--opposite-color--);
+  letter-spacing: -.05rem;
+}
+
+/* List of websites */
+sites-list ul {
+  width: 100%;
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+sites-list ul li {
+  padding: 1rem;
+  border-bottom: 0.15rem dashed var(--main-color--);
+  position: relative;
+  font-size: 1rem;
+}
+
+sites-list ul li.pending {
+  background-color: var(--pending-build-background-color);
+}
+
+sites-list ul li.failed {
+  background-color: var(--failed-build-background-color);
+}
+
+/* Individual website entries */ 
+sites-list ul li h3 {
+  font-size: 1.25rem;
+}
+sites-list ul li h3 a {
+  text-decoration: none;
+  letter-spacing: -0.05rem;
+  display: inline-block;
+  width: 24ch;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+sites-list ul li h3 a:hover {
+  color: unset;
+  text-decoration: underline;
+}
+
+sites-list ul li p {
+  font-size: 1rem;
+  letter-spacing: -0.05rem;
+  color: var(--opposite-color--);
+}
+
+/* "Inspect" link */
+sites-list ul li > a, sites-list ul li > a:visited {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 5ch;
+  text-align: center;
+  background-color: var(--action-color);
+  border-bottom: 0.25rem solid var(--action-color-);
+  border-left: 0.25rem solid var(--action-color-);
+  padding: 0.5rem;
+  padding-bottom: 0.2rem;
+  border-radius: 100%;
+  transition: all 0.25s ease-in-out;
+}
+
+sites-list ul li > a:hover {
+  background-color: var(--action-color-);
+  border-bottom-color: var(--action-color--);
+  border-left-color: var(--action-color--);
+}
+
+sites-list ul li > a img {
+  width: 1.25rem;
+}

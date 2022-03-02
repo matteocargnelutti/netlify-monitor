@@ -1,0 +1,77 @@
+{
+  "app_title": {
+    "message": "Netlify Monitor"
+  },
+  "app_description": {
+    "message": "Keep an eye on your Netlify builds."
+  },
+  "app_github_url": {
+    "message": "https://github.com/matteocargnelutti/netlify-monitor"
+  },
+  "failed_build_notification_title": {
+    "message": "Netlify Monitor: Failed build(s) alert"
+  },
+  "failed_build_notification_message": {
+    "message": "Something went wrong with the latest build of the following website(s):"
+  },
+  "authorization_dialog_intro": {
+    "message": "To get started, connect the extension to your Netlify account."
+  },
+  "authorization_dialog_connect_button": {
+    "message": "Connect to Netlify"
+  },
+  "authorization_dialog_connect_more_info": {
+    "message": "More information."
+  },
+  "header_toolbar_refresh_button": {
+    "message": "Refresh"
+  },
+  "header_toolbar_refresh_button_tooltip": {
+    "message": "Pull fresh data from Netlify"
+  },
+  "header_toolbar_refresh_pending": {
+    "message": "Refresh in progress ..."
+  },
+  "header_toolbar_last_refresh": {
+    "message": "Last refresh:"
+  },
+  "footer_toolbar_notifications_button_on": {
+    "message": "Notifications: ON"
+  },
+  "footer_toolbar_notifications_button_off": {
+    "message": "Notifications: OFF"
+  },
+  "footer_toolbar_notifications_button_tooltip": {
+    "message": "Turn notifications for failed builds on or off."
+  },
+  "footer_toolbar_exit_button": {
+    "message": "Log off"
+  },
+  "footer_toolbar_exit_button_tooltip": {
+    "message": "Log off and clear data cached locally."
+  }, 
+  "footer_toolbar_github_button": {
+    "message": "GitHub"
+  },
+  "footer_toolbar_github_button_tooltip": {
+    "message": "See the source code and contribute to this project on GitHub."
+  },
+  "sites_list_empty_caption": {
+    "message": "No websites to show, yet !"
+  },
+  "sites_list_build_pending_caption": {
+    "message": "⏳ Build pending"
+  },
+  "sites_list_build_failed_caption": {
+    "message": "❌ Build failed"
+  },
+  "sites_list_build_successful_caption": {
+    "message": "✅ Ok"
+  },
+  "sites_list_inspect_link_alt": {
+    "message": "Inspect"
+  },
+  "sites_list_inspect_link_tooltip": {
+    "message": "Inspect the latest build of this website:"
+  }
+}

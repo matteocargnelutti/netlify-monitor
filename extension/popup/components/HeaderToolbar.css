@@ -1,0 +1,37 @@
+header-toolbar {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  height: 12%;
+  padding: 0.85rem;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: var(--body-border-width) solid var(--main-color-);
+}
+
+header-toolbar h2 {
+  width: 85%;
+  display: flex;
+}
+
+header-toolbar h2 span {
+  margin: auto;
+  margin-left: 0px;
+  letter-spacing: -0.05rem;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: var(--opposite-color--);
+}
+
+header-toolbar button {
+  padding: 0.35rem;
+  padding-left: 0.25rem;
+  width: 15%;
+  text-align: center;
+}
+
+header-toolbar button img {
+  width: 1.35rem;
+  transition: all 0.35s ease-in-out;
+}
