@@ -5,7 +5,7 @@
 
 Get notified when a build goes awry, quickly access your Netlify websites and builds directly from Chrome's toolbar.
 
-Check it out on the [Chrome Web Store](https://chrome.google.com/webstore/detail/jichjfbdggldgikccpmchfbgibiaajdl). _(Under review)_
+Check it out on the [Chrome Web Store](https://chrome.google.com/webstore/detail/jichjfbdggldgikccpmchfbgibiaajdl).
 
 ![Screenshots of the "Netlify Monitor" extension](./misc/explainer.png)
 
