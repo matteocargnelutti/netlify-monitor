@@ -9,6 +9,8 @@ footer-toolbar {
 
   background-color: rgba(255, 255, 255, 0.5);
   border-top: var(--body-border-width) solid var(--main-color-);
+  
+  z-index: 2;
 }
 
 footer-toolbar button {
