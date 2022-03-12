@@ -5,13 +5,13 @@
 
 Get notified when a build goes awry, quickly access your Netlify websites and builds directly from Chrome's toolbar.
 
-Check it out on the [Chrome Web Store](https://chrome.google.com/webstore/detail/jichjfbdggldgikccpmchfbgibiaajdl).
+💾 Check it out on the [Chrome Web Store](https://chrome.google.com/webstore/detail/jichjfbdggldgikccpmchfbgibiaajdl).
 
 ![Screenshots of the "Netlify Monitor" extension](./misc/explainer.png)
 
 **This open-source project is not affiliated with Netlify.**
 
-**Current version:** 0.0.1
+**Current version:** 0.0.2
 
 [![Tests](https://github.com/matteocargnelutti/netlify-monitor/actions/workflows/run-tests.yml/badge.svg)](https://github.com/matteocargnelutti/netlify-monitor/actions/workflows/run-tests.yml)
 
