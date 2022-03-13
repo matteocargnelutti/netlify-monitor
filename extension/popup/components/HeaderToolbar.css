@@ -8,6 +8,8 @@ header-toolbar {
 
   background-color: rgba(255, 255, 255, 0.5);
   border-bottom: var(--body-border-width) solid var(--main-color-);
+
+  z-index: 2;
 }
 
 header-toolbar h2 {

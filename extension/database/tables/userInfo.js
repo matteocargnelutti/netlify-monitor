@@ -79,7 +79,7 @@ export class UserInfo {
 
     if (KEYS[this.key] === Date) {
       if (this.value instanceof Date !== true) {
-        this.value = Date(this.value);
+        this.value = new Date(this.value);
       }
     }
 
