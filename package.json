@@ -1,6 +1,6 @@
 {
   "name": "netlify-monitor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Chrome Extension to keep an eye on your Netlify builds.",
   "type": "module",
   "main": "index.js",

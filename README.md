@@ -11,7 +11,7 @@ Get notified when a build goes awry, quickly access your Netlify websites and bu
 
 **This open-source project is not affiliated with Netlify.**
 
-**Current version:** 0.0.2
+**Current version:** 0.0.3
 
 [![Tests](https://github.com/matteocargnelutti/netlify-monitor/actions/workflows/run-tests.yml/badge.svg)](https://github.com/matteocargnelutti/netlify-monitor/actions/workflows/run-tests.yml)
 
