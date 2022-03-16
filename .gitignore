@@ -5,3 +5,4 @@ test.sh
 extension/constants/netlifyClientId.js
 extension/lib/dexie.mjs
 netlify-monitor.zip
+run-tests.sh
