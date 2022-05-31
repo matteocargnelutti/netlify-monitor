@@ -2,7 +2,7 @@
   "name": "Netlify Monitor",
   "description": "__MSG_app_description__",
   "default_locale": "en",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "manifest_version": 3,
   "icons": {
     "16": "assets/icon-16.png",
