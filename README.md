@@ -103,7 +103,7 @@ The service worker pulls fresh data from the Netlify API every 2 minutes.
 ### Requirements
 **Machine-level requirement:**
 - Chrome 93+ for the extension itself.
-- [Latest Node.js LTS](https://nodejs.org/en/) for development and testing _(tested with 16.14)_.
+- [Latest Node.js LTS](https://nodejs.org/en/) for development and testing _(tested with 18.x)_.
 
 [☝️ Back to summary](#summary)
 

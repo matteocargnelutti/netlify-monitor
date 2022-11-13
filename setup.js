@@ -5,7 +5,6 @@
  * @license MIT
  * @description Prepares project for development or release. Invoked through `npm run setup`.
  */
-import fetch from "node-fetch";
 import fs from "node:fs";
 import prompts from "prompts";
 import zipdir from "zip-dir";
