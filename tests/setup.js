@@ -58,11 +58,11 @@ export async function getExtensionPage(browser) {
  */
 async function getExtensionUrl(browser) {
   const targets = await browser.targets();
-  const extensionTarget = targets.find(target => target._targetInfo.type === "service_worker");
+  const extensionTarget = targets.find(target => target.type() === "service_worker");
 
   if (!extensionTarget) {
     return null;
   }
 
-  return extensionTarget._targetInfo.url.replace("background/index.js", "popup/index.html");
+  return extensionTarget.url().replace("background/index.js", "popup/index.html");
 }
