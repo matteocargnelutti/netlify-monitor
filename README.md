@@ -1,3 +1,7 @@
+> 👋 Archived on Oct 21 2023 - No longer maintained
+
+---
+
 <img src="./extension/assets/icon-512.png" alt="Netlify Monitor's icon" width="96">
 
 # Netlify Monitor
